@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sk_dd_selector_index_goods_bg"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+        <!-- 商品名称 -->
+        <TextView
+            android:id="@+id/sk_tv_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="商品名称"
+            android:textColor="@color/c_black_000000"
+            android:textSize="26sp" />
+        <!-- 商品图片 -->
+        <com.xiaocoder.views.view.xc.XCImageView
+            android:id="@+id/sk_iv_goods_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/c_white_ffffff"
+            app:xc_radio_for_width_height="1" />
+        <!-- 商品描述 -->
+        <TextView
+            android:id="@+id/sk_iv_goods_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述"
+            android:textColor="#5c5c5c"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="粉丝价："
+                android:textColor="#E08242"
+                android:textSize="20sp" />
+            <!-- 商品价格 -->
+            <TextView
+                android:id="@+id/sk_tv_goods_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="50"
+                android:textColor="#E08242"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享人数："
+                android:textColor="#0DB9E4"
+                android:textSize="16sp" />
+            <!-- 商品分享人数 -->
+            <TextView
+                android:id="@+id/sk_tv_goods_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5000"
+                android:textColor="#0DB9E4"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

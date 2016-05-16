@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_white_ffffff"
+    android:orientation="vertical">
+    <!-- title -->
+    <com.xiaocoder.views.view.xc.XCTitleCommonLayout
+        android:id="@+id/xc_id_model_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:visibility="visible" />
+    <ScrollView
+        android:id="@+id/sk_index_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--首页轮播广告栏-->
+            <com.xiaocoder.viewpagerslider.XCAutoViewPagerLayout
+                android:id="@+id/sk_vp_banner_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:background="@color/c_white_ffffff"
+                android:orientation="vertical" />
+
+            <!--特别推荐布局-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="特别推荐"
+                    android:textColor="@color/index_line_color"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="5"
+                        android:background="@color/index_line_color" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_weight="2"
+                        android:background="@color/index_line_color2" />
+                </LinearLayout>
+
+                <!--特别推荐listview-->
+                <com.xiaocoder.views.view.open.OPNoScrollListview
+                    android:id="@+id/sk_lv_special"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    />
+            </LinearLayout>
+
+            <!--最新推荐布局-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="最新推荐"
+                    android:textColor="@color/index_line_color"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="5"
+                        android:background="@color/index_line_color" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_weight="2"
+                        android:background="@color/index_line_color2" />
+                </LinearLayout>
+                <!--最新推荐listview-->
+                <com.xiaocoder.views.view.open.OPNoScrollListview
+                    android:id="@+id/sk_lv_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    />
+            </LinearLayout>
+
+            <!--朋友都赞布局-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="朋友都赞"
+                    android:textColor="@color/index_line_color"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="5"
+                        android:background="@color/index_line_color" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_weight="2"
+                        android:background="@color/index_line_color2" />
+                </LinearLayout>
+                <!--朋友都赞listview-->
+                <com.xiaocoder.views.view.open.OPNoScrollListview
+                    android:id="@+id/sk_lv_praise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    />
+            </LinearLayout>
+
+
+            <!--底部第一排广告布局-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                >
+                <!--图一:左上广告图 @c -->
+                <com.xiaocoder.views.view.xc.XCImageView
+                    android:id="@+id/sk_iv_advertisement_01"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_launcher"
+                    android:background="@color/c_gray_999999"
+                    app:xc_radio_for_width_height="1" />
+                <!--图二:右上广告图 @c -->
+                <com.xiaocoder.views.view.xc.XCImageView
+                    android:id="@+id/sk_iv_advertisement_02"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_launcher"
+                    android:background="@color/c_gray_999999"
+                    app:xc_radio_for_width_height="1" />
+
+            </LinearLayout>
+
+            <!--底部第二排广告布局-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+                <!--图三:左下广告图 @c -->
+                <com.xiaocoder.views.view.xc.XCImageView
+                    android:id="@+id/sk_iv_advertisement_03"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_launcher"
+                    android:background="@color/c_gray_999999"
+                    app:xc_radio_for_width_height="1" />
+                <!--图四:右下广告图 @c -->
+                <com.xiaocoder.views.view.xc.XCImageView
+                    android:id="@+id/sk_iv_advertisement_04"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_launcher"
+                    android:background="@color/c_gray_999999"
+                    app:xc_radio_for_width_height="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

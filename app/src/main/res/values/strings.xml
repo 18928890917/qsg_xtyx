@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">新特优选</string>
+    <string name="action_settings">Settings</string>
+    <string name="get_captcha">获取短信验证码</string>
+</resources>

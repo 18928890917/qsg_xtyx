@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--背景图-->
+    <ImageView
+        android:background="@mipmap/beijing"
+        android:id="@+id/activity_load_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:layout_marginTop="110dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/talk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--登录注册按钮-->
+    <LinearLayout
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--注册 -->
+        <ImageView
+            android:background="@drawable/xl_dd_selector_register"
+            android:id="@+id/activity_load_register"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+         <!-- 登录  -->
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/xl_dd_selector_login"
+            android:id="@+id/activity_load_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logo"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
